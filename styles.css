@@ -2,18 +2,18 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    padding 20px;
 }
 
 .header, .hero, .info, .quote, .cta {
     display: flex;
-
 }
+ 
 
-img {
-
+.heroimg {
     height: 200px;
     width: auto;
+    display: block;
+    margin-left: auto;
 }
 
 ul {
@@ -21,11 +21,10 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 30px;
 }
 
-li {
-    padding: 10px;
-}
+/* sections */
 
 .header {
     background-color: #1F2937;
@@ -34,18 +33,26 @@ li {
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-
 }
 
 .hero {
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 50px;
-    align-items: center;
 }
 
 .content {
     flex: 1;
+}
+
+.titles {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0px 0px;
+}
+
+p {
+    font-size: 18px;
 }
 
 .heroimage {
@@ -53,13 +60,33 @@ li {
 }
 
 .info {
-
     background-color: #F9FAF8;
     flex-direction: column;
+    padding: 50px;
+    text-align: center;
 }
 
 .infocontent {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+    
+    
+}
+
+.infocontentblock {
+    flex-basis: 100px;
+    
+}
+
+.infoimg {
+
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 100px;
 }
 
 .quote {
@@ -76,11 +103,48 @@ li {
 }
 
 .quoteauthor {
-    align-items: last baseline;
+    text-align: right;
+    font-weight: bold;
+}
+
+.cta {
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctabox, .buttonbox {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 30px;
+}
+
+.buttonbox {
+    align-self: stretch;
+    align-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.ctabox {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .footer {
     background-color: #1F2937;
     color: #F9FAF8;
-    
+    height: 50px;
+}
+
+button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-color: #E5E7EB;
+    border-style: solid;
 }
