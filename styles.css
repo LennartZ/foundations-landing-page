@@ -8,6 +8,10 @@ body {
     display: flex;
 }
  
+h1 {
+
+    font-size: 24px;
+}
 
 .heroimg {
     height: 200px;
@@ -33,27 +37,21 @@ ul {
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
+    position: sticky;
+    top: 0%;
 }
 
 .hero {
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 50px;
+    padding-bottom: 70px;
 }
 
 .content {
     flex: 1;
 }
 
-.titles {
-    font-size: 48px;
-    font-weight: 900;
-    margin: 0px 0px;
-}
-
-p {
-    font-size: 18px;
-}
 
 .heroimage {
     flex: 1;
@@ -93,14 +91,12 @@ p {
     flex-direction: column;
     background-color: #E5E7EB;
     color: #1F2937;
-    padding: 50px
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+
 }
 
-.quotecontent {
-    font-size: 36px;
-    font-weight: 300;
-    font-style: italic;
-}
 
 .quoteauthor {
     text-align: right;
@@ -108,7 +104,7 @@ p {
 }
 
 .cta {
-    padding: 50px;
+    margin: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -117,6 +113,7 @@ p {
     background-color: #3882F6;
     color: #F9FAF8;
     padding: 30px;
+    
 }
 
 .buttonbox {
@@ -129,6 +126,8 @@ p {
 .ctabox {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    padding-left: 20px;
+    padding-top: 0px;
 }
 
 .footer {
@@ -137,7 +136,7 @@ p {
     height: 50px;
 }
 
-button {
+.ctabutton, .buttonhero {
     background-color: #3882F6;
     color: #E5E7EB;
     padding-left: 40px;
@@ -147,4 +146,62 @@ button {
     border-radius: 8px;
     border-color: #E5E7EB;
     border-style: solid;
+    
+}
+
+.buttonhero {
+    border-style: none;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Text Styles */
+
+.herotitle {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0px 0px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.herotext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.infotitle {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.intotext {
+    font-size: 16px;
+    color: darkgray;
+}
+
+.quotetext {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ctatitle {
+
+    font-size: 36px;
+    font-weight: 900;
+    padding: 0px;
+    margin: 20px 0;
+}
+
+.footertext {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 16px;
+    color: lightgray;
 }
